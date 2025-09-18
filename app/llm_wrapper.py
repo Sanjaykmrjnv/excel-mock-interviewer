@@ -9,7 +9,7 @@ load_dotenv()
 
 genai_api_key = os.getenv("GENAI_API_KEY")
 
-client = genai.Client(genai_api_key=genai_api_key)
+client = genai.Client(api_key=genai_api_key)
 
 def llm_evaluate_stub(kind: str, payload: Any) -> Dict[str, Any]:
     """
