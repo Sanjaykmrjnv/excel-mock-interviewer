@@ -19,17 +19,18 @@ The system conducts a structured, multi-turn interview, evaluates candidate answ
 ---
 
 ## 📂 Repo Structure
-excel-mock-interviewer/
-├─ app/
-│  ├─ streamlit_app.py         # Main Streamlit monolith (frontend + controller)
-│  ├─ evaluator.py             # Deterministic Excel checks (openpyxl)
-│  ├─ llm_wrapper.py           # LLM stub + optional OpenAI call
-│  └─ templates/
-│      └─ task1_template.xlsx  # auto-generated if missing
-├─ data/
-│  └─ interviews.jsonl         # transcripts (one JSON per line)
-├─ requirements.txt
-└─ README.md
+    ```bash
+      excel-mock-interviewer/
+      ├─ app/
+      │  ├─ streamlit_app.py         # Main Streamlit monolith (frontend + controller)
+      │  ├─ evaluator.py             # Deterministic Excel checks (openpyxl)
+      │  ├─ llm_wrapper.py           # LLM stub + optional OpenAI call
+      │  └─ templates/
+      │      └─ task1_template.xlsx  # auto-generated if missing
+      ├─ data/
+      │  └─ interviews.jsonl         # transcripts (one JSON per line)
+      ├─ requirements.txt
+      └─ README.md
 ---
 
 ## ⚡ Quickstart (Local)
